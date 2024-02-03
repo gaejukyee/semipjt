@@ -1,6 +1,4 @@
 @charset "utf-8";
-/* 메인칼라: #41EAD4 (민트) #FAF4EA (베이지) */
-/* 서브칼라: #583101 (브라운) #941B0C (버건디) #F35B04 (오렌지) #FF4D6D (코랄핑크) #4F772D (올리브) #FFFF3F (레몬) */
 
 
 /* 로고 서체 */
@@ -72,6 +70,9 @@
     src:url('../fonts/NotoSansKR-SemiBold.woff') format('woff');
 }
 
+/* 메인칼라: #41EAD4 (민트) #FAF4EA (베이지) */
+/* 서브칼라: #583101 (브라운) #941B0C (버건디) #F35B04 (오렌지) #FF4D6D (코랄핑크) #4F772D (올리브) #FFFF3F (레몬) */
+
 
 * { margin:0; padding:0; box-sizing:border-box;}
 
@@ -82,6 +83,8 @@ body {
 }
 
 h1 { font-family:Aboreto; }
+h2,h3,h5 {font-family: ;}
+
 
 ul li { list-style:none; }
 a { display:block; color:#583101; text-decoration:none; border:0; outline:0; }
@@ -89,6 +92,19 @@ img { display:block; border:0; outline:0; }
 
 
 /* 노말 버튼 하나 만들기 */
+
+.btn {
+    display:inline-block;
+    height:50px; padding:0 29px;
+    color:#F35B04;
+    text-align:center; line-height:50px;
+    border:1px solid #F35B04 ; border-radius:25px;
+    transition:all 0.4s ease-in;
+}
+.btn:hover {
+    color:#fff; background:#941B0C; 
+    transition:all 0.4s ease-in;
+}
 
 
 /*===== FLAT UI GERMAN PALETTE =====*/
