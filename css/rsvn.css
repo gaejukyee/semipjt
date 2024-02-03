@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@media screen and (min-width:1450px) {
+
+}
+
+@media screen and (min-width:1050px) and (max-width:1449px) {
+
+}
+
+@media screen and (min-width:1050px) and (max-width:650px) {
+
+}
+
+@media screen and (max-width:649px) {
+
+}

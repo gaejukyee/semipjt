@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* 메인칼라: #41EAD4 (민트) #FAF4EA (베이지) */
+/* 서브칼라: #583101 (브라운) #941B0C (버건디) #F35B04 (오렌지) #FF4D6D (코랄핑크) #4F772D (올리브) #FFFF3F (레몬) */
+
+
+/* 로고 서체 */
+@font-face { 
+    font-family:Aboreto;
+    src:url('../fonts/Aboreto-Regular.eot');
+    src:url('../fonts/Aboreto-Regular.woff') format('woff');
+}
+
+/* 영어 제목 서체 */
+@font-face { 
+    font-family:NotoSerifL;
+    src:url('../fonts/NotoSerif-Light.eot');
+    src:url('../fonts/NotoSerif-Light.woff') format('woff');
+}
+
+@font-face { 
+    font-family:NotoSerifM;
+    src:url('../fonts/NotoSerif-Medium.eot');
+    src:url('../fonts/NotoSerif-Medium.woff') format('woff');
+}
+
+@font-face { 
+    font-family:NotoSerifR;
+    src:url('../fonts/NotoSerif-Regular.eot');
+    src:url('../fonts/NotoSerif-Regular.woff') format('woff');
+}
+
+/* 영어 본문 서체 */
+@font-face { 
+    font-family:NotoSansL;
+    src:url('../fonts/NotoSans-Light.eot');
+    src:url('../fonts/NotoSans-Light.woff') format('woff');
+}
+
+@font-face { 
+    font-family:NotoSansM;
+    src:url('../fonts/NotoSans-Medium.eot');
+    src:url('../fonts/NotoSans-Medium.woff') format('woff');
+}
+
+@font-face { 
+    font-family:NotoSansR;
+    src:url('../fonts/NotoSans-Regular.eot');
+    src:url('../fonts/NotoSans-Regular.woff') format('woff');
+}
+
+/* 한글 제목 서체 */
+@font-face { 
+    font-family:NotoSerifKrR;
+    src:url('../fonts/NotoSerifKR-Regular.woff') format('woff');
+}
+
+@font-face { 
+    font-family:NotoSerifKrSB;
+    src:url('../fonts/NotoSerifKR-SemiBold.woff') format('woff');
+}
+
+/* 한글 본문 서체 */
+@font-face { 
+    font-family:NotoSansKrR;
+    src:url('../fonts/NotoSansKR-Regular.eot');
+    src:url('../fonts/NotoSansKR-Regular.woff') format('woff');
+}
+
+@font-face { 
+    font-family:NotoSansKrSB;
+    src:url('../fonts/NotoSansKR-SemiBold.eot');
+    src:url('../fonts/NotoSansKR-SemiBold.woff') format('woff');
+}
+
+
+* { margin:0; padding:0; box-sizing:border-box;}
+
+body {
+    font-family:NotoSansKrR;
+    font-size:16px; color:#583101;
+    background:#fff;
+}
+
+h1 { font-family:Aboreto; }
+
+ul li { list-style:none; }
+a { display:block; color:#583101; text-decoration:none; border:0; outline:0; }
+img { display:block; border:0; outline:0; }
+
+
+/* 노말 버튼 하나 만들기 */
+
+
+/*===== FLAT UI GERMAN PALETTE =====*/
+.abtn {
+	margin:0 2px; padding:10px 15px;
+	font-size:16px; font-family:NotoSerifKrR; color:#f6f6f6; 
+	border:0; border-radius:5px; cursor:pointer;
+	transition:all 0.4s ease-in;
+}
+.abtn-primary {background:#a10702;}
+.abtn-danger {background:#fc5c65;}
+.abtn-success {background:#2bcbba;}
+.abtn-info {background:#78380c;}
+.abtn-warning {background:#fd9644;}
+.abtn-default {color:#333; background:#ddd;}
+
+.abtn-primary:hover {background:#ebb912;}
+.abtn-danger:hover {background:#eb3b5a;}
+.abtn-success:hover {background:#0fb9b1;}
+.abtn-info:hover {background:#402b15;}
+.abtn-warning:hover {background:#fa8231;}
+.abtn-default:hover {color:#f6f6f6; background:#778ca3;}
