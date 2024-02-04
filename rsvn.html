@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CatchDesk | Reservation</title>
+    <script src="https://kit.fontawesome.com/11390cb447.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reset.css"></link>
+    <link rel="stylesheet" href="css/common.css"></link>
+    <link rel="stylesheet" href="css/rsvn.css"></link>
+    <script src="js/rsvn.js"></script> 
 </head>
 <body>
-    
+    <section>
+        <div class="rs-container">
+            <div class="rs-choose">
+                <ul id="rs-type">
+                    <li><a href="#" id="rs-type-A" class="rs-type">A<span>&nbsp;type</span></a></li>
+                    <li><a href="#" id="rs-type-B" class="rs-type">B<span>&nbsp;type</span></a></li>
+                    <li><a href="#" id="rs-type-C" class="rs-type">C<span>&nbsp;type</span></a></li>
+                </ul>
+                <div class="rs-space">
+                    <div class="rs-cafe-space">
+                        <div class="rs-cafe-window">window</div>
+                        <div class="rs-cafe-desk-A">A-area
+                            <div class="rs-cafe-chair-A">
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="rs-cafe-desk-B">B-area</div>
+
+
+                        <div class="rs-toilet"><i class="fa-solid fa-restroom"></i></div>                
+
+                        <div class="rs-tree"><i class="fa-solid fa-tree"></i></div>
+
+                        <div class="rs-door"><i class="fa-solid fa-door-open"></i></div>
+                    </div>
+                    
+                    <div class="rs-room-space"></div>
+
+                    <div class="rs-desk-space"></div>
+                </div>
+            </div>
+            <div class="rs-regi">
+                
+                <form name="rs-regiForm" method="post">
+                    <ul id="rs-regicard">
+                        <li>
+                            <input type="text" name="id" placeholder="아이디">
+                        </li>
+                        <li>
+                            <input type="text" name="name" placeholder="이름">
+                        </li>
+                        <li>
+                            <input type="tel" name="tel" placeholder="전화번호 입력 (010-0000-0000)">
+                        </li>
+                        <li><input type="date" name="resdate" class="fill-in fill-in-flex"  id="member-input" required></li>
+                        <li><label for="restime">예약시간
+                                <select name="restime" id="restime" required>
+                                    <option value="09시">09시</option>
+                                    <option value="10시">10시</option>
+                                    <option value="11시">11시</option>
+                                    <option value="12시">12시</option>
+                                    <option value="14시">14시</option>
+                                    <option value="15시">15시</option>
+                                    <option value="16시">16시</option>
+                                    <option value="17시">17시</option>				
+                                </select>
+                            </label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
