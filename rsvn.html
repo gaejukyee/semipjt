@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatchDesk | Reservation</title>
+    <link rel="icon" href="imgs/favicon.ico">
     <script src="https://kit.fontawesome.com/11390cb447.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css"></link>
     <link rel="stylesheet" href="css/common.css"></link>
@@ -39,14 +40,35 @@
                             </div>
                         </div>
 
-                        <div class="rs-cafe-desk-B">B-area</div>
+                        <div class="rs-cafe-toilet"><i class="fa-solid fa-restroom"></i></div>
 
+                        <div class="rs-cafe-desk-B">B-area
+                            <div class="rs-cafe-chair-B">
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                            </div>
+                        </div>
 
-                        <div class="rs-toilet"><i class="fa-solid fa-restroom"></i></div>                
+                        <div class="rs-cafe-tree"><i class="fa-solid fa-tree"></i></div>
 
-                        <div class="rs-tree"><i class="fa-solid fa-tree"></i></div>
+                        <div class="rs-cafe-desk-C">C-area
+                            <div class="rs-cafe-chair-C">
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                            </div>
+                        </div>
 
-                        <div class="rs-door"><i class="fa-solid fa-door-open"></i></div>
+                        <div class="rs-cafe-door"><i class="fa-solid fa-door-open"></i></div>
                     </div>
                     
                     <div class="rs-room-space"></div>
@@ -55,21 +77,25 @@
                 </div>
             </div>
             <div class="rs-regi">
-                
+                <h3>reservation</h3>
+                <h4>예약하기</h4>
                 <form name="rs-regiForm" method="post">
                     <ul id="rs-regicard">
                         <li>
-                            <input type="text" name="id" placeholder="아이디">
+                            <input type="text" name="id" placeholder="아이디" required>
                         </li>
                         <li>
-                            <input type="text" name="name" placeholder="이름">
+                            <input type="text" name="name" placeholder="이름" required>
                         </li>
                         <li>
-                            <input type="tel" name="tel" placeholder="전화번호 입력 (010-0000-0000)">
+                            <input type="tel" name="tel" placeholder="전화번호 입력 (010-0000-0000)" required>
                         </li>
-                        <li><input type="date" name="resdate" class="fill-in fill-in-flex"  id="member-input" required></li>
-                        <li><label for="restime">예약시간
-                                <select name="restime" id="restime" required>
+                        <li><input type="date" name="date" required></li>
+                        <li><label for="time">시간 :</label>
+                                <select name="time" id="time" required>
+                                    <option value="06시">06시</option>
+                                    <option value="07시">07시</option>
+                                    <option value="08시">08시</option>
                                     <option value="09시">09시</option>
                                     <option value="10시">10시</option>
                                     <option value="11시">11시</option>
@@ -77,10 +103,46 @@
                                     <option value="14시">14시</option>
                                     <option value="15시">15시</option>
                                     <option value="16시">16시</option>
-                                    <option value="17시">17시</option>				
+                                    <option value="17시">17시</option>
+                                    <option value="18시">18시</option>
+                                    <option value="19시">19시</option>
+                                    <option value="20시">20시</option>
+                                    <option value="21시">21시</option>
+                                    <option value="22시">22시</option>
+                                    <option value="23시">23시</option>
                                 </select>
-                            </label>
+                            <label for="from">부터</label>
+                                <select name="time" id="time" required>
+                                    <option value="07시">07시</option>
+                                    <option value="08시">08시</option>
+                                    <option value="09시">09시</option>
+                                    <option value="10시">10시</option>
+                                    <option value="11시">11시</option>
+                                    <option value="12시">12시</option>
+                                    <option value="14시">14시</option>
+                                    <option value="15시">15시</option>
+                                    <option value="16시">16시</option>
+                                    <option value="17시">17시</option>
+                                    <option value="18시">18시</option>
+                                    <option value="19시">19시</option>
+                                    <option value="20시">20시</option>
+                                    <option value="21시">21시</option>
+                                    <option value="22시">22시</option>
+                                    <option value="23시">23시</option>
+                                    <option value="24시">24시</option>
+                                </select>
+                            <label for="to">까지</label>
                         </li>
+                        <li>
+                            <input type="text" readonly><label>type</label><input type="text" readonly><label>구역</label><input type="text" readonly><label>좌석</label>
+                        </li>
+                        <li>
+                            <label>이용 금액 : KRW</label><input type="text" readonly>
+                        </li>
+                    </ul>
+                    <ul id="rs-submit">
+                        <li><button type="submit" class="abtn abtn-success">예약하기</button></li>
+                        <li><button type="reset" class="abtn abtn-primary">다시작성</button></li>
                     </ul>
                 </form>
             </div>
