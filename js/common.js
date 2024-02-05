@@ -18,7 +18,7 @@ $(function(){
         $(this).find('.sub-menu-bg').stop().slideUp();
     });
     
-
+ /*sm 트리거 버튼 만들 예정 */
     $('#trigger').click(function(e){
         e.preventDefault();
         $(this).toggleClass('active');
