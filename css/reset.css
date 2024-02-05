@@ -91,7 +91,7 @@ a { display:block; color:#583101; text-decoration:none; border:0; outline:0; }
 img { display:block; border:0; outline:0; }
 
 
-/* 노말 버튼 하나 만들기 */
+/* 노말 버튼 */
 
 .btn {
     display:inline-block;
