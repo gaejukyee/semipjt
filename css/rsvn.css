@@ -144,9 +144,9 @@ input, select, button { border:0; outline:0; background:0; }
 }
 
 #rs-regicard li:last-child { 
-    width:80%; margin:10px 0; padding:2px;
+    width:100%; margin:10px 0; padding:2px;
 }
-#rs-regicard li:last-child > input { width:46%; border-bottom:2px solid #583101; }
+#rs-regicard li:last-child > input { width:45%; margin-left:5px; border-bottom:2px solid #583101; }
 
 #rs-submit {
     display:flex; justify-content:space-around;
