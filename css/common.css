@@ -296,8 +296,49 @@
 
 @media screen and (max-width:649px) {
 
-
-
+    .logo { display:none; }
+    .main-menu { display:none; }
+    #dt {display:none; }
+    .ft-wrap { display:none; }
     
+    .sm-logo { padding:20px; transform:translate(38%);}
+    .top-menu { 
+        display:flex; 
+        position:fixed; right:30px; top:10px;
+        font-size:22px;
+    }
+    .top-menu li a {padding:5px;}
+
+    #trigger {
+        position:fixed; left:15px; top:18px;
+        width:32px; height:24px; z-index:21;
+    }
+    #trigger span {
+        position:absolute; left:0;
+        height:2px;
+        background:#402b15;
+        transition:all 0.4s ease-out;
+    }
+    #trigger span:nth-child(1) { width:100%; top:0; }
+    #trigger span:nth-child(2) { width:70%; top:11px; }
+    #trigger span:nth-child(3) { width:70%; bottom:0; }
+    #trigger:hover span { width:100%; }
+
+    /* active */
+    #trigger.active span:nth-child(1) {            
+        transform:rotate(-45deg) translate(-4px, 11px);
+        background:#402b15;
+    }
+    #trigger.active span:nth-child(2) { opacity:0; }
+    #trigger.active span:nth-child(3) {
+        width:100%;
+        transform:rotate(45deg) translate(-4px, -11px);
+        background:#402b15;
+    }
+    
+
+
+
+
 
 }
