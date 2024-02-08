@@ -6,7 +6,7 @@ input, select, button { border:0; outline:0; background:0; }
 
 
 
-.rs-container { display:flex; }
+.rs-container { display:flex; position:absolute; left:50%; transform:translateX(-50%);}
 
 .rs-choose { width:800px; }
 
@@ -25,24 +25,20 @@ input, select, button { border:0; outline:0; background:0; }
     z-index:999; opacity:1;
 }
 
-.c-btn {border:0; outline:0; background:0; cursor:pointer;}
+.c-btn { border:0; outline:0; background:0; cursor:pointer; }
 .c-btn i { font-size:33px; color:#41EAD4; }
 .c-btn:hover i { color:#FF4D6D; }
 
-.rs-space {
-    position:relative; 
-    
-}
+.rs-space { position:relative; }
 .rs-cafe-space, .rs-room-space, .rs-desk-space {
-    position:absolute; left:50%;
+    position:absolute;
     width:800px; height:500px; 
     background:#FAF4EA;
     border:3px solid #41EAD4;
     border-radius:15px;
-    transform:translateX(-50%);
     overflow:hidden;
 }
-.rs-cafe-window {
+.rs-cafe-window, .rs-room-board {
     width:100%; height:25px; line-height:25px;
     background:#41EAD4;
     color:#FAF4EA; text-align:center; 
@@ -96,7 +92,6 @@ input, select, button { border:0; outline:0; background:0; }
 }
 .rs-cafe-chair-C > button { padding:15px; }
 
-
 .rs-cafe-door {
     position:absolute; right:300px; bottom:0;
     font-size:40px;
@@ -104,8 +99,50 @@ input, select, button { border:0; outline:0; background:0; }
 
 
 
-.rs-cafe-space { z-index:1; }
-.rs-room-space { opacity:0; }
+
+.rs-room-rms { display:flex; }
+
+.rs-room-rm1 { 
+    width:300px; height:300px; 
+    border:3px solid #41EAD4; border-top:0; border-left:0; 
+}
+.rs-room-desk-1 {
+    width:40%; height:200px; margin:30px auto;
+    line-height:200px;
+    color:#583101; text-align:center; 
+    border:3px solid #583101;
+    border-radius:5px;
+}
+.rs-room-chair-1 {
+    position:absolute; left:-23px; top:55px;
+    width:400px; height:200px;
+}
+.rs-room-chair-1 > button { padding:15px 70px;}
+
+
+
+
+
+
+.rs-room-rm2 { 
+    width:200px; height:200px; 
+    border-bottom:3px solid #41EAD4;
+}
+
+
+
+
+.rs-room-rm3 { 
+    width:300px; height:300px; 
+    border:3px solid #41EAD4; 
+    border-top:0; border-right:0;
+}
+
+
+
+
+/* .rs-cafe-space { z-index:1; } */
+.rs-room-space { opacity:1; }
 .rs-desk-space { opacity:0; }
 
 
@@ -115,6 +152,7 @@ input, select, button { border:0; outline:0; background:0; }
 
 
 .rs-regi {
+    display:none;
     width:300px; height:500px; margin-top:84px; margin-left:-2px;
     background:#FAF4EA;
     border:3px solid #41EAD4;
