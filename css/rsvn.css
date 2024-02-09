@@ -1,18 +1,15 @@
 @charset "utf-8";
 
-section { width:1400px; margin:0 auto; }
-input, select, button { border:0; outline:0; background:0; }
-
-
-
-
-.rs-container { display:flex; position:absolute; left:50%; transform:translateX(-50%);}
+.rs-container { 
+    display:flex; justify-content:center;
+    position:absolute; left:50%;
+    transform:translate(-50%);
+}
 
 .rs-choose { width:800px; }
 
 #rs-type {
     display:flex; justify-content:center;
-    
 }
 
 .rs-type {
@@ -21,9 +18,7 @@ input, select, button { border:0; outline:0; background:0; }
     color:#FAF4EA;
     border-radius:5px;
 }
-.rs-active {
-    z-index:999; opacity:1;
-}
+.rs-active { opacity:1; }
 
 .c-btn { border:0; outline:0; background:0; cursor:pointer; }
 .c-btn i { font-size:33px; color:#41EAD4; }
@@ -100,7 +95,7 @@ input, select, button { border:0; outline:0; background:0; }
 
 
 
-.rs-room-rms { display:flex; }
+/* .rs-room-rms { display:flex; }
 
 .rs-room-rm1 { 
     width:300px; height:300px; 
@@ -119,49 +114,48 @@ input, select, button { border:0; outline:0; background:0; }
 }
 .rs-room-chair-1 > button { padding:15px 70px;}
 
-
-
-
-
-
 .rs-room-rm2 { 
     width:200px; height:200px; 
     border-bottom:3px solid #41EAD4;
 }
 
-
-
-
 .rs-room-rm3 { 
     width:300px; height:300px; 
     border:3px solid #41EAD4; 
     border-top:0; border-right:0;
+} */
+
+
+
+.rs-cafe-space { opacity:0; }
+.rs-room-space { opacity:0; }
+.rs-desk-space { opacity:1; }
+
+
+.rs-desk-desk {
+    width:100px; height:50px;
+    text-align:center;
+    border:3px solid #583101;
+    border-radius:5px;
 }
+.rs-desk-desk > .c-btn > i { font-size:40px; }
 
 
 
 
-/* .rs-cafe-space { z-index:1; } */
-.rs-room-space { opacity:1; }
-.rs-desk-space { opacity:0; }
-
-
-
-
-
-
+/* registration form */
 
 .rs-regi {
-    display:none;
     width:300px; height:500px; margin-top:84px; margin-left:-2px;
     background:#FAF4EA;
     border:3px solid #41EAD4;
     border-radius:15px;
+    opacity:0;
 }
 .rs-regi > h3 { margin-top:20px; text-align:center; }
 .rs-regi > h4 { margin:10px 0 20px; text-align:center; }
 
-#rs-regicard { margin-left:30px;}
+#rs-regicard { margin-left:30px; }
 
 #rs-regicard > li > input {
     width:90%; margin:10px 0; padding:2px;
@@ -184,7 +178,9 @@ input, select, button { border:0; outline:0; background:0; }
 #rs-regicard li:last-child { 
     width:100%; margin:10px 0; padding:2px;
 }
-#rs-regicard li:last-child > input { width:45%; margin-left:5px; border-bottom:2px solid #583101; }
+#rs-regicard li:last-child > input { 
+    width:45%; margin-left:5px; border-bottom:2px solid #583101; 
+}
 
 #rs-submit {
     display:flex; justify-content:space-around;
