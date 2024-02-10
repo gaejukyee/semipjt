@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css"></link>
     <link rel="stylesheet" href="css/common.css"></link>
     <link rel="stylesheet" href="css/rsvn.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/rsvn.js"></script> 
 </head>
 <body>
@@ -21,11 +22,11 @@
                     <li><a href="#" id="rs-type-C" class="rs-type">C<span>&nbsp;type</span></a></li>
                 </ul>
                 <div class="rs-space">
-                    <div class="rs-cafe-space">
+                    <div class="rs-pick rs-cafe-space">
                         <div class="rs-cafe-window">window</div>
                         <div class="rs-cafe-desk-A">A-area
                             <div class="rs-cafe-chair-A">
-                                <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
+                                <button id="c-btn" class="c-btn"><i class="fa-solid fa-chair"></i></button>
                                 <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
                                 <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
                                 <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
@@ -68,50 +69,150 @@
                             </div>
                         </div>
 
-                        <div class="rs-cafe-door"><i class="fa-solid fa-door-open"></i></div>
+                        <div class="rs-door"><i class="fa-solid fa-door-open"></i></div>
                     </div>
                     
-                    <!-- <div class="rs-room-space">
+                    <div class="rs-pick rs-room-space">
                         <div class="rs-room-rms">
-                            <div class="rs-room-rm1">
-                                <div class="rs-room-board">board</div>
-                                <div class="rs-room-desk-1">No.1 Room</div>
-                                <div class="rs-room-chair-1">
-                                    <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
-                                    <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
-                                    <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
-                                    <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
-                                    <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
-                                    <button class="c-btn"><i class="fa-solid fa-chair"></i></button>
-                                </div>
-                            <div class="rs-room-rm2">
-                                <div class="rs-room-board">board</div>
+                            <div class="rs-room rs-room-1">
+                                <p>Room No.1</p>
+                                <p>6 people</p>
+                                <button class="c-btn"><i class="fa-solid fa-people-roof"></i></button>
                             </div>
-                            <div class="rs-room-rm3">
-                                <div class="rs-room-board">board</div>
+                            <div class="rs-room rs-room-2">
+                                <p>Room No.2</p>
+                                <p>6 people</p>
+                                <button class="c-btn"><i class="fa-solid fa-people-roof"></i></button>
+                            </div>
+                            <div class="rs-room rs-room-3">
+                                <p>Room No.3</p>
+                                <p>6 people</p>
+                                <button class="c-btn"><i class="fa-solid fa-people-roof"></i></button>
+                            </div>
+                            <div class="rs-room rs-room-4">
+                                <p>Room No.4</p>
+                                <p>12 people</p>
+                                <button class="c-btn"><i class="fa-solid fa-people-roof"></i></button>
                             </div>
                         </div>
-                    </div> -->
+                        <div class="rs-room rs-room-5">
+                            <div class="rs-room-5-txt">
+                                <p>Room No.5</p>
+                                <p>4 people</p>
+                            </div>
+                            <button class="c-btn"><i class="fa-solid fa-people-roof"></i></button>
+                        </div>
 
-                    <div class="rs-desk-space">
-                        <div class="rs-desk-desk">
-                            <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                        <div class="rs-door"><i class="fa-solid fa-door-open"></i></div>
+
+
+
+                    </div>
+
+                    <div class="rs-pick rs-desk-space">
+                        <div class="rs-desk-A">
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.1</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                            <div class="rs-desk-wall"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.2</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                            <div class="rs-desk-wall"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.3</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                            <div class="rs-desk-wall"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.4</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                            <div class="rs-desk-wall"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.5</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                            <div class="rs-desk-wall"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.6</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
                         </div>
-                        <div class="rs-desk-desk">
-                            <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+
+                        <div class="rs-desk-wall-h">
+                            <div class="rs-desk-wall-h1"></div>
+                            <div class="rs-desk-wall-h2"></div>
                         </div>
-                        <div class="rs-desk-desk">
-                            <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                        <div class="rs-desk-B">
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.7</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                            <div class="rs-desk-wall"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.8</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                            <div class="rs-desk-wall"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.9</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                            <div class="rs-desk-wall"></div>
+
+                            <div class="rs-desk-wall rs-desk-wall-r"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.10</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                            <div class="rs-desk-wall"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.11</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
                         </div>
-                        <div class="rs-desk-desk">
-                            <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+
+                        <div class="rs-desk-wall-h">
+                            <div class="rs-desk-wall-h1"></div>
+                            <div class="rs-desk-wall-h2"></div>
                         </div>
-                        
+                        <div class="rs-desk-B">
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.12</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                            <div class="rs-desk-wall"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.13</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                            <div class="rs-desk-wall"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.14</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+
+                            <div class="rs-desk-wall"></div>
+                            <div class="rs-desk-wall rs-desk-wall-r"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.15</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                            <div class="rs-desk-wall"></div>
+                            <div class="rs-desk-set">
+                                <div class="rs-desk-desk">No.16</div>
+                                <button class="c-btn"><i class="fa-solid fa-laptop"></i></button>
+                            </div>
+                        </div>
+                        <div class="rs-door"><i class="fa-solid fa-door-open"></i></div>
                     </div>
                 </div>
             </div>
 
-            <div class="rs-regi">
+            <div class="rs-regi rs-switch">
                 <h3>reservation</h3>
                 <h4>예약하기</h4>
                 <form name="rs-regiForm" method="post">
