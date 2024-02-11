@@ -9,7 +9,7 @@ $(function(){
         $(this).find('.sub-menu, #sub-p').stop().slideUp();
         $(this).find('.sub-menu-bg').stop().slideUp();
     });
-    
+    /*제일 최신*/
 
     // sm 트리거 버튼
     $('#trigger').click(function(e){
