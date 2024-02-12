@@ -16,10 +16,10 @@ $(function(){
         $(this).toggleClass('active');
         $('.sm-main-menu').toggleClass('active');
     });
-    
+
 });
 
-
+//최신 
 
 //sm 영역 메인메뉴
 window.onload = function() {
