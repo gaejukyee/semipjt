@@ -9,7 +9,6 @@ $(function(){
         $(this).find('.sub-menu, #sub-p').stop().slideUp();
         $(this).find('.sub-menu-bg').stop().slideUp();
     });
-    /*제일 최신*/
 
     // sm 트리거 버튼
     $('#trigger').click(function(e){
@@ -17,7 +16,10 @@ $(function(){
         $(this).toggleClass('active');
         $('.sm-main-menu').toggleClass('active');
     });
+    
 });
+
+
 
 //sm 영역 메인메뉴
 window.onload = function() {
