@@ -7,7 +7,22 @@
         box-sizing: border-box;
     }
 
+    .bg1 { 
+        background:url(/imgs/Library01.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .bg2 { 
+        background:url(/imgs/Library02.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .bg3 { 
+        background:url(/imgs/Library03.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    html, body {width:100%; height:100vh;}
 
+
+    
 @media screen and (min-width:1450px) {
 
     .sm-logo {display:none;}
@@ -15,6 +30,9 @@
     #sm {display:none;}
     #trigger {display:none;}
 
+    .bg { 
+        width:100%; height:950px;
+    }
 
 
     header {
@@ -29,13 +47,13 @@
         display: block;
         position: relative;
         /* padding: 15px 25px; */
-        font-weight: 600; color: #583101;  
+        font-weight: 600; color:#941B0C; 
         text-decoration: none; text-transform: uppercase;
     }
     .main-menu a:after {
         position: absolute; top: 100%; left: 0;
         width: 100%; height: 1px;
-        background:  #941B0C;
+        background:  #41EAD4;
         content: '';
         opacity: 0;
         -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
@@ -57,7 +75,7 @@
         font-size:18px;
     }
     .main-menu li a{ padding: 20px 50px; }
-    .main-menu li a:hover { color:#941B0C; }
+    .main-menu li a:hover { color:rgba(65, 234, 212, 0.8); }
 
     /*뚝딱거리면 sub-menu 패딩 따로주기
     .sub-menu li a {padding: 20px 0}*/
@@ -69,7 +87,6 @@
         border-bottom:1px solid rgba(245, 245, 245, 0.4);
         z-index: -100; 
     }
-    .container {}
 
     .sub-menu { 
         display:none;
@@ -87,7 +104,7 @@
         margin-top:150px; margin-left:60px;
         font-weight:100; border-bottom: thick double #32a1ce;
     }
-    .sub-container li > a:hover { color:#32a1ce;}
+    .sub-container li > a:hover { color:#4F772D;}
     #sub-p {
         display:none; 
         position:absolute; left:50%; top:120px;
@@ -349,9 +366,9 @@
         text-align:center;
         background:peru; opacity:0;
         animation:fade-out 0.5s;
+        
     }
-    /*toggleclass를 이용해 active를 활성화 시키는건 알겠다.
-    근데 다시 트리거버튼을 눌렀을때 비활성화는 왜 되는건가?*/
+    
     /* active */
     .sm-main-menu.active { left:0; opacity:1; animation:fade-in 0.5s;}
 
@@ -362,25 +379,13 @@
     }
     .sm-main-menu > li > a:hover { background:#402b15; color:#ffd450; }
     .sub-menu { display:none; }
-    .sub-menu a {
+    .sub-menu  a {
         padding:25px 0;
         font-size:20px; color:#402b15;
         background:#e4ceaf;
         transition:all 0.4s ease-in;
     }
     .sub-menu a:hover { background:#402b15; color:#ffd450; }
-    .sm-sub-a::before {
-        content: "↑";
-    }
-    .sm-sub-a::before {
-        content: "↓";
-        position: absolute;
-        right: 18px; align-items:center;
-        line-height: 1em;
-        font-size: 24px;
-    }
-
-
 
     .top-menu { 
         display:flex; 
@@ -403,9 +408,9 @@
     }
     
     #trigger span:nth-child(1) { width:100%; top:0; }
-    #trigger span:nth-child(2) { width:70%; top:11px; }
-    #trigger span:nth-child(3) { width:70%; bottom:0; }
-    #trigger:hover span { width:100%; background: #941B0C;}
+    #trigger span:nth-child(2) { width:100%; top:11px; }
+    #trigger span:nth-child(3) { width:100%; bottom:0; }
+    #trigger:hover span {background: #941B0C;}
 
     /* active */
     #trigger.active span:nth-child(1) {            
