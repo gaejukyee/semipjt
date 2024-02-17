@@ -9,11 +9,21 @@
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/common.css">
-    
-    <script src="flexslider/jquery.flexslider.js"></script>
+    <link rel="stylesheet" href="flexslider/flexslider.css">
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="flexslider/jquery.flexslider.js"></script>
     <script src="js/common.js"></script>
+
+
+    <script>
+        $(function(){
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -57,27 +67,41 @@
 
                 <li>
                     <div class="sub-menu-bg"></div>
-                    <a href="#">도서관 좌석 예약</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">서브 메뉴</a></li>
-                    </ul>
+                    <a href="#">도서관 좌석예약</a>
+                    <div class="container">
+                        <p id="sub-p">도서관 좌석예약</p>
+                        <ul class="sub-menu">
+                            <div class="sub-container">
+                                <li><a href="#" class="sub-a">좌석 예약하기</a></li>   
+                                <li><a href="#" class="sub-a">좌석 안내</a></li>
+                            </div>
+                        </ul>
+                    </div>
                 </li>
 
                 <li>
                     <div class="sub-menu-bg"></div>
                     <a href="#">추천 도서</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">서브메뉴</a></li>
-                    </ul>
+                    <div class="container">
+                        <p id="sub-p">추천 도서</p>
+                        <ul class="sub-menu">
+                            <div class="sub-container">
+                                <li><a href="#" class="sub-a">도서 찾기</a></li>   
+                                <li><a href="#" class="sub-a">이달의 리스트</a></li>
+                            </div>
+                        </ul>
+                    </div>
                 </li>
             </ul>
 
-
-<!-----------sm영역 메인메뉴 ----------->
+            <!-----------sm영역 메인메뉴 ----------->
             <ul class="sm-main-menu">
+                <a href="index.html" class="sm-logo"><span>C</span>atch<span>D</span>esk</a>
+                
                 <li>
-                    <div class="sub-menu-bg"><a href="index.html" class="sm-logo"><span>C</span>atch<span>D</span>esk</a></div>
-                    <a href="#">가맹점 소개</a>
+                    <div class="sub-menu-bg"></div>
+                    <i class="arrow bi bi-caret-up-fill" id="arrow"></i>
+                    <a href="#">가맹점 소개<i class="arrow bi bi-caret-up-fill" id="arrow"></i></a>
                     <ul class="sub-menu">
                         <li><a href="#" >지점 위치</a></li>   
                         <li><a href="#">지점 이용안내</a></li>
@@ -105,7 +129,7 @@
                     </ul>
                 </li>
             </ul>
-            
+            <!-----------top 메뉴 ----------->
             <ul id="dt" class="top-menu">
                 <li><a href="joinForm.html">join</a></li>
                 <div class="top-menu_bar"></div>
@@ -117,5 +141,43 @@
             </ul>
         </nav>
     </header>
+
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <div class="bg bg1">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="bg bg2">
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="bg bg3">
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    <script>
+        const arrow = document.getElementById('arrow');
+        let isUp = false;
+    
+        arrow.addEventListener('click', function() {
+            if (isUp) {
+                arrow.classList.remove('bi-caret-up-fill');
+                arrow.classList.add('bi-caret-down-fill');
+            } else {
+                arrow.classList.remove('bi-caret-down-fill');
+                arrow.classList.add('bi-caret-up-fill');
+            }
+            isUp = !isUp;
+        });
+    </script>
     </body>
     </html>
+    
+
