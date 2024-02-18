@@ -6,14 +6,18 @@
     <title>catchdesk</title>
     <script src="https://kit.fontawesome.com/11390cb447.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/swiper.css">
     <link rel="stylesheet" href="flexslider/flexslider.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="./js/swiper.js"></script>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="flexslider/jquery.flexslider.js"></script>
     <script src="js/common.js"></script>
-
 
     <script>
         $(function(){
@@ -141,27 +145,69 @@
             </ul>
         </nav>
     </header>
-
+        <!--슬라이더 텍스트 부분-->
         <div class="flexslider">
             <ul class="slides">
                 <li>
                     <div class="bg bg1">
-
+                        <div class="txt-wrap">
+                            <h2>Premium</h2>
+                            <h3>고품격 학습공간</h3>
+                            <p>고풍스러운 컨셉의 인테리어에 편안한 'key color'을 적용해<br>
+                                더욱더 몰입도 있는 학습이 가능해지도록 만들어줍니다.</p>
+                        </div>    
                     </div>
                 </li>
                 <li>
                     <div class="bg bg2">
-                        
+                        <div class="txt-wrap">
+                            <h2>Intellect</h2>
+                            <h3>최초의 복합문화학습공간</h3>
+                            <p>모든 학습자들의 고민 '즐거운 공부방법'<br>
+                                그해답을 캐치데스크는 교육공간에 '문화'를 더하는 방법으로 해결책을 제시합니다.</p>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <div class="bg bg3">
-                        
+                        <div class="txt-wrap">
+                            <h2>Le procope</h2>
+                            <h3>프랑스 카페</h3>
+                            <p>'르 프로코프'를 모티브로 한 클래식하고 엔틱한 컨셉의 인테리어는<br>
+                                엔틱함과 젠틀한 분위기를 잡아주어 집중할 수 있는 최적의 공간을 제시합니다.</p>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
-        
+
+        <div class="main-container">
+            <div class="main-title">
+                <h2>도서관 소개</h2>
+                <p>언제나 학습에 대한 집중을 최우선으로 생각하고있습니다.<br>
+                학습자 분들을 위해 최적의 환경으로 노력하겠습니다.</p>
+            </div>
+            <div class="main-flexslider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide bg4"></div>
+                        <div class="swiper-slide bg5"></div>
+                        <div class="swiper-slide bg6 "></div>
+                        <div class="swiper-slide bg7"></div>
+                        <div class="swiper-slide bg8"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev">
+                        <div class="material-icons">arrow_back</div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <div class="material-icons">arrow_forward</div>
+                </div>
+            </div>
+        </div>
+
+ 
+
     <script>
         const arrow = document.getElementById('arrow');
         let isUp = false;
