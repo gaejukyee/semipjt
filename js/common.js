@@ -19,7 +19,6 @@ $(function(){
 
 });
 
-//최신 
 
 //sm 영역 메인메뉴
 window.onload = function() {
