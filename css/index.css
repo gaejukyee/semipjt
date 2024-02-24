@@ -167,25 +167,7 @@
     .swiper-slide > h5 { margin:5px 0 0 23px;}
     .swiper-slide > h2 { margin:0 0 0 20px;}
     .swiper-slide > p { margin-top:370px;}
-     /* = = = = = footer = = = = = */
-    footer { height:300px; }
-    .ft-wrap {
-        position:relative;
-        display:flex; 
-        width:1300px; margin:0 auto; padding:120px 0;
-        color:#402b15; justify-content:space-between;
-    }
 
-    .ft-wrap > p {
-        width:650px; font-size:14px; line-height:21px;
-    }
-    .sns { display:flex; }
-    .sns a {
-        padding:0 10px;
-        font-size:32px; color:#402b15;
-    }
-    .sns a:hover { color:#FF4D6D; }
-    
 
 }
 
@@ -320,28 +302,6 @@
     .swiper-slide > h2 { margin:0 0 0 20px;}
     .swiper-slide > p { margin-top:370px;}
         
-        
-     /* = = = = = footer = = = = = */
-    footer { height:300px; }
-    .ft-wrap {
-        position:relative;
-        display:flex; 
-        width:900px; margin:0 auto; padding:120px 0;
-        color:#402b15; justify-content:space-between;
-    }
-
-    .ft-wrap > p {
-        width:500px; font-size:12px; line-height:19px;
-    }
-    .sns { display:flex; }
-    .sns a {
-        padding:0 8px;
-        font-size:26px; color:#402b15;
-    }
-    .sns a:hover { color:#FF4D6D; }
-
-
-
 
 }
 
@@ -478,26 +438,7 @@
     .swiper-slide > h5 { margin:5px 0 0 23px;}
     .swiper-slide > h2 { margin:0 0 0 20px;}
     .swiper-slide > p { margin-top:370px;}
-        
-        
-     /* = = = = = footer = = = = = */
-    footer { height:300px; }
-    .ft-wrap {
-        position:relative;
-        display:flex; 
-        width:600px; margin:0 auto; padding:120px 0;
-        color:#402b15; justify-content:space-between;
-    }
 
-    .ft-wrap > p {
-        width:500px; font-size:12px; line-height:19px;
-    }
-    .sns { display:flex; }
-    .sns a {
-        padding:0 8px;
-        font-size:26px; color:#402b15;
-    }
-    .sns a:hover { color:#FF4D6D; }
 
 }
 
@@ -505,7 +446,6 @@
 
     .logo { display:none; }
     #dt {display:none; }
-    .ft-wrap { display:none; }
     .main-menu {display:none; }
     
 
@@ -626,7 +566,5 @@
         transform:rotate(45deg) translate(-4px, -11px);
         background:#402b15;
     }
-
 }
     
-
